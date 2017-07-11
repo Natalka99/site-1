@@ -1,0 +1,42 @@
+.body {
+	font-family: Arial, Verdana, sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+	background-image: url(http://bgfons.com/uploads/books/books_texture3018.jpg);
+}
+.aside_p {
+    background-color: #777;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    text-align: center;
+    right: 50%;
+   }
+
+.header {
+ 	background-color: #888;
+ 	width: 100%;
+ 	height: 170px;
+} 
+
+.h1_font {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.img_logo {
+	width: auto;
+	height: 100px;
+}
+
+.span_text {
+	color: red; 
+	font-size: 2em;
+}
+
+.text{
+	text-align: center;
+}
