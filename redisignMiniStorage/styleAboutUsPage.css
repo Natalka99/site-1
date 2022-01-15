@@ -1,0 +1,82 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.content {
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+.toggle-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.contentImg {
+	width: 70%;
+	margin: auto;
+}
+.blockText {
+	margin: 28px auto;
+}
+.blockText a {
+	color: black;
+}
+.blockText a:hover {
+	color: blue;
+}
+.blockText h2 {
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+.blockText p {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+h2::selection {
+    background: transparent;
+}
+h2::-moz-selection {
+    background: transparent;
+}
+@media only screen and (max-width: 715px) {
+  	.contentImg {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 615px) {
+	.blockText {
+	    margin: 70px auto;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.blockText {
+	    margin: 30px auto;
+	}
+}

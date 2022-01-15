@@ -1,0 +1,116 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}  
+.content {
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.content h1 {
+	margin: 0;
+	text-align: center;
+	cursor: default;
+	font-size: 20px;
+	letter-spacing: 0.7px;
+}
+.content h3 {
+	text-align: center;
+	margin: 10px;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.centerText {
+	margin-top: 60px;
+}
+.table {
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+	cursor: default;
+}
+.table td {
+	margin: auto;
+	text-align: center;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.table th {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.blockQuestions {
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    padding: 30px;
+}
+.blockQuestions p {
+	margin: 0;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.blockQuestions h5 {
+	margin-bottom: 2px;
+	cursor: default;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+@media screen and (max-width: 450px) {
+	.content h1 {
+		font-size: 18px;
+	}
+	.content h3 {
+		font-size: 14px;
+	}
+	.table {
+		width: 95%;
+	}
+	.table td {
+		font-size: 14px;
+	}
+	.table th {
+		font-size: 14px;
+	}
+	.blockQuestions {
+	    width: 85%;
+	    padding: 20px;
+	}
+	.blockQuestions p {
+		font-size: 14px;
+	}
+	.blockQuestions h5 {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 440px) {
+	.centerText {
+		margin-top: 28px;
+	}
+}

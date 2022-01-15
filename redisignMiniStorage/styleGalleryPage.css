@@ -1,0 +1,126 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.content {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	background-color: white;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.content p {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.span {
+	text-align:center;
+	margin:30px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media screen and (max-width: 615px) {
+	.headerBlocks {
+	  width: 100%;
+  }
+  .content p {
+  	padding-top: 45px;
+  }
+}
+@media screen and (max-width: 525px) {
+	.content p {
+    font-size: 20px;
+	}
+	.span {
+		margin: 10px;
+	}
+	.dot {
+  	height: 10px;
+  	width: 10px;
+	}
+}
+@media screen and (max-width: 440px) {
+	.content p {
+		padding-top: 0;
+	}
+}

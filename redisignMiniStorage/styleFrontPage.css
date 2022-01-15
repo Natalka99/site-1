@@ -1,0 +1,350 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.content {
+	display: flex;
+	flex-flow: column;
+}
+.blockUp {
+	background-image: url("./imgs/img1.png");
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  height: 535px;
+  display: flex;
+  flex-flow: column;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.blockUpText {
+	max-width: 600px;
+	min-width: 280px;
+	background-color: rgb(6, 8, 7, 0.7);
+	text-align: center;  
+	margin: auto; 
+}
+.blockUpText h1 {
+	font-size: 55px;
+	color: white;
+	cursor: default;
+}
+.blockInfoLink {
+	display: flex;
+  height: 330px;
+  background-color: rgb(233, 233, 233);
+  justify-content: space-around
+}
+.blockThreeIcons {
+	display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  background-color: rgb(233, 233, 233);
+  align-items: center;
+  margin: 10px;
+}
+.blockIcon {
+	width: 60%;
+  display: flex;
+  align-items: center;
+}
+.blockIcon a {
+	display: flex;
+	height: 80px;
+}
+.blockIcon img {
+	display: flex;
+}
+.blockIcon p {
+	font-size: 15px;
+	margin: 20px;
+	cursor: default;
+	letter-spacing: 0.7px;
+}
+.blockLinkImg Img {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.blockImgText {
+	display: flex;
+  height: 330px;
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+}
+.blockImg {
+	max-width: 500px;
+  max-height: 370px;
+}
+.blockImg img {
+  height: 100%;
+}
+.blockText {
+	cursor: default;
+	margin: 0 10px;
+	justify-content: space-around;
+	display: flex;
+	flex-flow: column;
+}
+.blockText p {
+	margin: 5px 0;
+	font-size: 15px;
+	letter-spacing: 0.7px;
+} 
+.blockTextImg {
+	display: flex;
+  height: 330px;
+  background-color: rgb(233, 233, 233);
+  padding: 20px;
+}
+.sendForm {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	background-color: rgb(250, 250, 250);
+}
+.formTextarea {
+	align-items: center;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.completeForm {
+	display: flex;
+  max-width: 700px;
+  justify-content: space-around;
+  min-width: 280px;
+  flex-flow: wrap;
+  margin: 20px;
+}
+.completeForm input {
+  width: 210px;
+  padding: 12px 20px;
+	box-sizing: border-box;
+  outline: none;
+  border: 1px solid;
+  border-radius: 20px;
+}
+input:focus {
+  background-color: rgb(232, 232, 232);
+}
+.question {
+  margin: 15px 0;
+	height: 80px;
+}
+.completeForm textarea {
+	box-sizing: border-box;
+  outline: none;
+  border: 1px solid;
+  padding: 12px 20px;
+  border-radius: 20px;
+  width: 677px;
+}
+textarea:focus {
+  background-color: rgb(232, 232, 232);
+}
+.completeForm button {
+  border: none;
+  background: rgb(56, 86, 158);
+  color: white;
+  padding: 6px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease; 
+}
+button:hover {
+  background: rgba(0,0,0,0);
+  color: rgb(56, 86, 158);
+  box-shadow: inset 0 0 0 3px rgb(56, 86, 158);
+}
+.map {
+	display: flex;
+	width: 100%;
+}
+.map img {
+	width: 100%; 
+	height: 100%;
+}
+@media screen and (max-width: 1025px) {
+	.blockText {
+		padding: 0;
+	}
+	.blockIcon {
+    width: 80%;
+	}
+}
+@media screen and (max-width: 1010px) {
+	.blockText p {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 940px) {
+	.blockText p {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	.blockIcon p {
+		font-size: 14px;
+		margin: 10px;
+	}
+	.blockText {
+		justify-content: flex-start;
+		overflow: scroll;
+	}
+}
+@media screen and (max-width: 874px) {
+	.blockUp {
+		background-image: url("./imgs/img1_1.png");
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+	}
+	.blockInfoLink {
+    height: 200px;
+    padding: 5px;
+	}
+	.blockLinkImg img {
+		max-width: 350px;
+		padding: 5px;
+	}
+	.blockIcon img{
+		width: 50px;
+		height: 50px;
+	}
+	.blockIcon a {
+		width: 50px;
+		height: 50px;
+	}
+	.blockIcon p {
+		font-size: 14px;
+	}
+	.blockImg img{
+		max-width: 350px;
+	}
+	.blockImgText {
+		height: 200px;
+		padding: 10px;
+	}
+	.blockTextImg {
+		height: 200px;
+		padding: 10px;
+	}
+	.blockText p {
+		font-size: 14px;
+} 
+}
+@media screen and (max-width: 772px) {
+	.blockUp {
+		background-image: url("./imgs/img1_2.png");
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+	}
+	.blockUpText {
+    max-width: 500px;
+	}
+	.blockUpText h1 {
+    font-size: 45px;
+	}
+	.blockIcon {
+		width: 80%;
+	}
+	.completeForm {
+	 	display: flex;
+	  flex-flow: wrap;
+	}
+}
+@media only screen and (max-width: 715px) {
+	.completeForm {
+   	width: 40%;
+  }
+  .completeForm input {
+	  width: 280px;
+	  margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 615px) {
+	.blockUp {
+		height: 300px;
+	}
+	.blockInfoLink {
+    display: flex;
+    flex-flow: wrap;
+    height: 400px;
+  }
+  .blockThreeIcons {
+  	margin: 0;
+  }
+  .blockLinkImg {
+  	margin: auto;
+  }
+  .blockLinkImg img {
+		max-width: 300px;
+		padding: 5px;
+	}
+  .blockImgText {
+  	display: flex;
+  	flex-flow: wrap;
+  	height: 370px;
+  	padding: 5px;
+  }
+  .blockTextImg {
+  	display: flex;
+  	flex-flow: wrap;
+  	height: 370px;
+  }
+  .blockImg {
+  	margin: auto;
+  	padding: 5px;
+  }
+  .blockImg img {
+  	width: 300px;
+  }
+  .blockText {
+  	height: 125px;
+  }
+}
+@media screen and (max-width: 525px) {
+	.blockUpText h1 {
+		font-size: 40px;
+	}
+	.blockUpText {
+    max-width: 400px;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.blockUpText {
+    max-width: 300px;
+	}
+	.blockUpText h1 {
+    font-size: 28px;
+	}
+}

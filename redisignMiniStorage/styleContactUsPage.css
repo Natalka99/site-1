@@ -1,0 +1,137 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.content {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.bgImg {
+	background-image: url("./imgs/bgImg.png");
+	background-repeat: no-repeat;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+}
+.textBlockCenter {
+	text-align: center;
+}
+.textBlockCenter h5 {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	margin: 0;
+	cursor: default;
+}
+.textBlockCenter h2 {
+	cursor: default;
+	font-size: 20px;
+	letter-spacing: 0.7px;
+	margin-top: 75px;
+}
+.textBlockInfo {
+	display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 75px;
+}
+.textBlockInfo h5 {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	cursor: default;
+	margin: auto;
+	padding: 5px;
+}
+.textBlockInfo p {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	margin: 0;
+	cursor: default;
+}
+.textBlockInfo a {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	color: black;
+}
+.textBlockInfo a:hover {
+	color: blue;
+	font-weight: bold;
+}
+@media screen and (max-width: 615px) {
+	.headerBlocks {
+	  	width: 100%;
+  	}
+  .textBlockCenter h2 {
+  	margin-top: 68px;
+  }
+}
+@media screen and (max-width: 525px) {
+	.footer {
+	    height: 240px;
+	}
+	.Text {
+		text-align: center;
+		padding-top: 10px;
+	}
+	.blockTextIcon {
+		flex-flow: wrap;
+		justify-content: normal;
+		width: 70%;
+		align-items: center;
+	}
+	.blockTextIcon p {
+		margin: auto;
+	}
+	.blockRight {
+		flex-flow: column;
+		margin: auto;
+	}
+	.blockTextIcon a {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 525px) {
+	.blockRental {
+		margin-right: 15px;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.iconLink p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+	.textBlockInfo a {
+		font-size: 15px;
+	}
+	.textBlockCenter h2 {
+	    font-size: 18px;
+	}
+	.textBlockInfo h5 {
+	    font-size: 15px;
+	}
+	.textBlockCenter h5 {
+	    font-size: 15px;
+	}
+}

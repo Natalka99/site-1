@@ -1,0 +1,275 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+	background-color: rgb(216 238 252 / 62%);
+}
+.content {
+	background-color: white;
+}
+.toggle-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.link-ease-in-out a:after {
+  background-color: rgb(31, 31, 31);
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;  
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+  width: 100%;
+}
+.content {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+.content p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    cursor: default;
+    margin: 0;
+    padding-top: 40px;
+}
+.priceInfoBlock {
+	display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blockInitFees {
+	display: flex;
+	flex-flow: column;
+}
+.climatContr {
+	display: flex;
+	margin: auto;
+}
+.blockRental {
+	display: flex;
+	flex-flow: column;
+	margin-right: 30px;
+	cursor: default;
+}
+.blockText {
+	text-align: center;
+	font-size: 18px;
+	margin: 10px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+.priceInfoBlock h3 {
+	margin: 10px;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+.priceInfoBlock h5 {
+	margin: 0;
+	font-weight: 100;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	cursor: default;
+}
+.priceInfoBlock h6 {
+	margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    font-weight: 100;
+    cursor: default;
+}
+.firstThreeBlocks {
+	width: 100%;
+	display: flex;
+    flex-flow: wrap;
+	justify-content: space-around;
+}
+.blockGifText {
+	display: flex;
+	max-width: 250px;
+	flex-flow: column;
+	margin-bottom: 20px;
+	align-items: center;
+}
+.demo {
+	text-align: center;
+	margin: 10px;
+	cursor: pointer;
+}
+.demo p {
+	font-size: 18px;
+	letter-spacing: 0.7px;
+	margin: auto;
+}
+.demo label {
+	color: black;
+	font-size: 18px;
+	letter-spacing: 0.7px;
+}
+.hide {
+    display: none; 
+}
+.hide + label ~ p {
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    cursor: pointer; 
+    font-weight: bold;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: grey;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + p {
+    display: block;
+    width: 250px;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+}
+.bgSizeImgFirst {
+	background-image: url('./imgs/5x5.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgFirst:hover {
+	background-image: url('./gifImgs/5x5UnitSize.gif');
+}
+.bgSizeImgSecond {
+	background-image: url('./imgs/5x10.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgSecond:hover {
+	background-image: url('./gifImgs/5x10UnitSize.gif');
+}
+.bgSizeImgThird {
+	background-image: url('./imgs/10x10.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgThird:hover {
+	background-image: url('./gifImgs/10x10UnitSize.gif');
+}
+.secondThreeBlocks {
+	width: 100%;
+	display: flex;
+    flex-flow: wrap;
+	justify-content: space-around;
+}
+.bgSizeImgForth {
+	background-image: url('./imgs/10x15.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgForth:hover {
+	background-image: url('./gifImgs/10x15UnitSize.gif');
+}
+.bgSizeImgFifth {
+	background-image: url('./imgs/10x20.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgFifth:hover {
+	background-image: url('./gifImgs/10x20UnitSize.gif');
+}
+.bgSizeImgSixth {
+	background-image: url('./imgs/10x30.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 215px;
+	cursor: pointer;
+}
+.bgSizeImgSixth:hover {
+	background-image: url('./gifImgs/10x30UnitSize.gif');
+}
+p::selection {
+    background: transparent;
+}
+p::-moz-selection {
+    background: transparent;
+}
+label::selection {
+    background: transparent;
+}
+label::-moz-selection {
+    background: transparent;
+}
+h6::selection {
+    background: transparent;
+}
+h6::-moz-selection {
+    background: transparent;
+}
+h5::selection {
+    background: transparent;
+}
+h5::-moz-selection {
+    background: transparent;
+}
+h3::selection {
+    background: transparent;
+}
+h3::-moz-selection {
+    background: transparent;
+}
+@media screen and (max-width: 615px) {
+	.content p {
+      padding-top: 70px;
+	}
+}
+@media screen and (max-width: 525px) {
+	.content p {
+      font-size: 15px;
+	}
+	.content h4 {
+	  font-size: 15px;
+	}
+	.priceInfoBlock h3 {
+	  font-size: 15px;
+	}
+	.priceInfoBlock h5 {
+	  font-size: 15px;
+	}
+	.priceInfoBlock h6 {
+	  font-size: 15px;
+	}
+	.demo label {
+	  font-size: 15px;
+	}
+	.blockRental {
+	  margin-right: 15px;
+	}
+}
+@media screen and (max-width: 440px) {
+	.content p {
+      padding-top: 10px;
+	}
+}
